@@ -23,23 +23,23 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-// Set initial opacity
+
 gsap.set(".heroBg2, .heroLastSlide, .heroLogo, .heroTextCon", { opacity: 0 });
 
-// Create a timeline for all animations
+
 const heroTimeline = gsap.timeline({
     scrollTrigger: {
         trigger: ".hero",
         start: "top top",
-        end: "+=1000px", // Adjust this value based on your needs
+        end: "+=1000px",
         scrub: true,
         pin: true,
         pinSpacing: false,
-        anticipatePin: 1 // This helps smooth out the pinning
+        anticipatePin: 1 
     }
 });
 
-// Add animations to the timeline
+
 heroTimeline
     .to(".heroBg2", {
         opacity: 1,
@@ -50,17 +50,17 @@ heroTimeline
         opacity: 1,
         ease: "power1.out",
         duration: 1
-    }, "+=0.5") // Delay start by 0.5
+    }, "+=0.5")
     .to(".heroLogo", {
         opacity: 1,
         ease: "power1.out",
         duration: 1
-    }, "+=0.5") // Delay start by 0.5
+    }, "+=0.5")
     .to(".heroTextCon", {
         opacity: 1,
         ease: "power1.out",
         duration: 1
-    }, "+=0"); // Delay start by 0.5
+    }, "+=0");
 
 
 // gsap.set(".heroLastSlide", { width: "0%" });
