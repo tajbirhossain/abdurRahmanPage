@@ -60,7 +60,7 @@ heroTimeline
         opacity: 1,
         ease: "power1.out",
         duration: 1
-    }, "+=0");
+    }, "-=1");
 
 
 // gsap.set(".heroLastSlide", { width: "0%" });

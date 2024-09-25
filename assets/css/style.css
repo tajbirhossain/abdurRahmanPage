@@ -68,10 +68,14 @@
     position: absolute;
     top: 200px;
     right: 100px;
+    background-color: #2e8ee1;
+    border-radius: 10px;
+    padding: 15px;
 }
 .heroTextCon h3 {
     font-size: 35px;
     font-weight: 400;
+    color: #fff;
 }
 
 
@@ -107,8 +111,8 @@
 
 @media (max-width: 1300px) {
     .heroTextCon {
-        top: 264px;
-        right: 43px;
+        top: 235px;
+        right: 40px;
     }
     .heroTextCon h3 {
         font-size: 20px;
@@ -159,5 +163,15 @@
     .heroTextCon h3 {
         font-size: 15px;
         font-weight: 500;
+    }
+}
+
+
+
+
+
+@media (max-width: 500px) {
+    .heroTextCon {
+        top: 355px;
     }
 }
