@@ -24,39 +24,73 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-gsap.set(".heroBg2, .heroLastSlide, .heroLogo, .heroTextCon", { opacity: 0 });
+gsap.set(".heroBg21, .heroLastSlide1, .heroLogo1, .heroTextCon1, .heroBg22, .heroLastSlide2, .heroLogo2, .heroTextCon2", { opacity: 0 });
 
 
 const heroTimeline = gsap.timeline({
     scrollTrigger: {
-        trigger: ".hero",
+        trigger: ".hero1",
         start: "top top",
         end: "+=1000px",
         scrub: true,
         pin: true,
-        pinSpacing: false,
+        pinSpacing: true,
+        anticipatePin: 1 
+    }
+});
+const heroTimeline2 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".hero2",
+        start: "top top",
+        end: "+=1000px",
+        scrub: true,
+        pin: true,
+        pinSpacing: true,
         anticipatePin: 1 
     }
 });
 
 
 heroTimeline
-    .to(".heroBg2", {
+    .to(".heroBg21", {
         opacity: 1,
         ease: "power1.out",
         duration: 1
     })
-    .to(".heroLastSlide", {
+    .to(".heroLastSlide1", {
         opacity: 1,
         ease: "power1.out",
         duration: 1
     }, "+=0.5")
-    .to(".heroLogo", {
+    .to(".heroLogo1", {
         opacity: 1,
         ease: "power1.out",
         duration: 1
     }, "+=0.5")
-    .to(".heroTextCon", {
+    .to(".heroTextCon1", {
+        opacity: 1,
+        ease: "power1.out",
+        duration: 1
+    }, "-=1");
+
+
+heroTimeline2
+    .to(".heroBg22", {
+        opacity: 1,
+        ease: "power1.out",
+        duration: 1
+    })
+    .to(".heroLastSlide2", {
+        opacity: 1,
+        ease: "power1.out",
+        duration: 1
+    }, "+=0.5")
+    .to(".heroLogo2", {
+        opacity: 1,
+        ease: "power1.out",
+        duration: 1
+    }, "+=0.5")
+    .to(".heroTextCon2", {
         opacity: 1,
         ease: "power1.out",
         duration: 1

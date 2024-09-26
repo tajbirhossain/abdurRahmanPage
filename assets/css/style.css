@@ -64,17 +64,22 @@
 
 
 .heroTextCon {
-    width: 350px;
+    width: 500px;
     position: absolute;
-    top: 200px;
-    right: 100px;
-    background-color: #2e8ee1;
-    border-radius: 10px;
+    top: 300px;
+    right: 0px;
+    background-color: rgba(4, 61, 93, 0.75);
+    border-radius: 2px;
     padding: 15px;
 }
 .heroTextCon h3 {
-    font-size: 35px;
-    font-weight: 400;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+}
+.heroTextCon p {
+    font-size: 16px;
     color: #fff;
 }
 
@@ -101,8 +106,12 @@
     .heroLastSlide {
         width: calc(100% - 408px);
     }
+    .heroTextCon {
+        top: 200px;
+    }
     .heroTextCon h3 {
-        font-size: 25px;
+        font-size: 20px;
+        margin-bottom: 10px;
     }
 }
 
@@ -111,8 +120,7 @@
 
 @media (max-width: 1300px) {
     .heroTextCon {
-        top: 235px;
-        right: 40px;
+        top: 300px;
     }
     .heroTextCon h3 {
         font-size: 20px;
@@ -134,9 +142,8 @@
     }
 
     .heroTextCon {
-        width: 280px;
-        top: 300px;
-        right: 20px;
+        width: 400px;
+        top: 200px;
     }
 }
 
@@ -157,8 +164,7 @@
 
 
     .heroTextCon {
-        width: 170px;
-        top: 400px;
+        width: 350px;
     }
     .heroTextCon h3 {
         font-size: 15px;
@@ -172,6 +178,6 @@
 
 @media (max-width: 500px) {
     .heroTextCon {
-        top: 355px;
+        top: 150px;
     }
 }
